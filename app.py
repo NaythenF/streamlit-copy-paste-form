@@ -23,4 +23,4 @@ if submitted:
         f"Notes: {notes}",
     ]
     output = "\n".join(output_lines)
-    pyperclip.copy(output)
+    st.code(output)
