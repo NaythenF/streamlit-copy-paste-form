@@ -6,6 +6,7 @@ st.title("Here you go :)")
 with st.form("Data Entry Form"):
     dealer = st.text_input("Dealer")
     subject = st.text_input("Subject")
+    customer_name = st.text_input("Customer Name")
     phone_numbers = st.text_input("Phone Number(s)")
     vehicle = st.text_input("Vehicle")
     vin = st.text_input("VIN")
@@ -17,6 +18,7 @@ if submitted:
     output_lines = [
         f"Dealer: {dealer}",
         f"Subject: {subject}",
+        f"Customer Name: {customer_name}",
         f"Phone Number(s): {phone_numbers}",
         f"Vehicle: {vehicle}",
         f"VIN: {vin}",
