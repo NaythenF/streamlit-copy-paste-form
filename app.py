@@ -3,7 +3,7 @@ import pyperclip
 
 st.title("Here you go :)")
 
-with st.form("Data Entry Form"):
+with st.form("Data Entry Form", clear_on_submit=True):
     dealer = st.text_input("Dealer")
     subject = st.text_input("Subject")
     customer_name = st.text_input("Customer Name")
